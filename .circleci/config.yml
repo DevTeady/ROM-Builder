@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: ghcr.io/sushrut1101/docker:latest
 
-    resource_class: 2xlarge
+    resource_class: xlarge
     steps:
       - checkout
 

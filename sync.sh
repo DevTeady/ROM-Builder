@@ -7,7 +7,7 @@ mkdir -p $SYNC_PATH
 cd $SYNC_PATH
 
 # Init Repo
-repo init -u $MANIFEST -b $MANIFEST_BRANCH
+repo init -u https://github.com/Project-Awaken/android_manifest -b 12
 
 # Sync the Sources
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)

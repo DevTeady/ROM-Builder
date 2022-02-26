@@ -2,9 +2,8 @@ version: 2.1
 
 jobs:
   build:
-    docker:
-      - image: ghcr.io/sushrut1101/docker:latest
-
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
     resource_class: xlarge
     steps:
       - checkout
@@ -13,6 +12,11 @@ jobs:
           name: Source Vars
           command: |
             source vars.sh
+      
+      - run:
+          name: Source apt
+          command: |
+            source apts.sh
 
       - run:
           name: Sync

@@ -6,7 +6,7 @@ git config --global user.name $GIT_USERNAME &&  git config --global user.email $
 
 sudo rm -f /etc/profile ~/.profile ~/.bashrc
 
-git clone https://github.com/Sushrut1101/Docker && cd Docker && cp -r proprietary/* /
+git clone https://github.com/Sushrut1101/Docker && cd Docker && sudo cp -r proprietary/* /
 
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && apt-get install -y tzdata && dpkg-reconfigure --frontend noninteractive tzdata
 

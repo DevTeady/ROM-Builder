@@ -29,7 +29,7 @@ export LUNCH_COMBO="awaken_r5x-userdebug" # eg: "aosp_miatoll-userdebug", No nee
 export TARGET="" # eg: "bacon", No need if USE_BRUNCH_AS_TARGET is set to true
 
 # Output File (to upload)
-export OUTPUT_FILE="" # eg: "PixelExperience*.zip"
+export OUTPUT_FILE="Awaken*.zip" # eg: "PixelExperience*.zip"
 
 # Extra Command
 export EXTRA_CMD="git clone --single-branch --depth=1 https://github.com/LineageOS/android_external_ant-wireless_antradio-library.git external/ant-wireless/antradio-library/"

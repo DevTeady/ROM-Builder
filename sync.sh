@@ -8,9 +8,10 @@ cd $SYNC_PATH
 
 # Init Repo
 repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
+repo init -u $MANIFEST -b $MANIFEST_BRANCH
 
 # Sync the Sources
-repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 
 # Clone Trees
 git clone --single-branch --depth=1 $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }

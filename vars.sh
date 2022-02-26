@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ENV
+export TZ="Asia/Kolkata"
+
 # Manifest
 export MANIFEST="https://github.com/Project-Awaken/android_manifest.git"
 export MANIFEST_BRANCH="12"
